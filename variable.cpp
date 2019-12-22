@@ -10,8 +10,8 @@ int main()
     int local_variable_l = 0;
     int local_variable_2 = 0;
 
-    int *single_int_1 = new int(0);
-    int *single_int_2 = new int(0);
+    int *single_int_1 = new int;
+    int *single_int_2 = new int;
 
     cout << "&global_variable_1 = " << &global_variable_1 << "; " << endl;
     cout << "&global_variable_2 =" << &global_variable_2 << ";" << endl;
