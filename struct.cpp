@@ -63,5 +63,9 @@ int main()
     cout << "Sum of fields in Client struct: " << sizeof(client.Age) + sizeof(client.Queue) + sizeof(client.Name) + sizeof(client.Alright) << endl;
     cout << "Sum of fields in DisorderedClient struct: " <<  sizeof(disorderedClient.Age) + sizeof(disorderedClient.Queue) + sizeof(disorderedClient.Name) + sizeof(disorderedClient.Alright) << endl;
     cout << "Sum of structs: " << sizeof(Client) + sizeof(disorderedClient) + sizeof(disorderedClient1)<< endl;
+    cout << &client.Alright << " " << &client.Name << " " << &client.Queue << " " << &client.Age << " " << &client.Name << " " << &client.SecondName << endl;
+    cout << &client1.Alright << " " << &client1.Name << " " << &client1.Queue << " " << &client1.Age << " " << &client1.Name << " " << &client1.SecondName << endl;
+    cout << &disorderedClient.Alright << " " << &disorderedClient.Name << " " << &disorderedClient.Queue << " " << &disorderedClient.Age << " " << &disorderedClient.Name << " " << &disorderedClient.SecondName << endl;
+    cout << &disorderedClient1.Alright << " " << &disorderedClient1.Name << " " << &disorderedClient1.Queue << " " << &disorderedClient1.Age << " " << &disorderedClient1.Name << " " << &disorderedClient1.SecondName << endl;
     return 0;
 }
