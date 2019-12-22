@@ -17,8 +17,8 @@ int main()
     cout << "&global_variable_2 =" << &global_variable_2 << ";" << endl;
     cout << "&local_variable_l = " << &local_variable_l << ";" << endl;
     cout << "&local_variable_2 = " << &local_variable_2 << ";" << endl;
-    cout << "&single_int_1 = " << &single_int_1[1] << "; " << endl;
-    cout << "&single_int_2 = " << &single_int_2[1] << ";" << endl;
+    cout << "&single_int_1 = " << &single_int_1[0] << "; " << endl;
+    cout << "&single_int_2 = " << &single_int_2[0] << ";" << endl;
 
     delete [] single_int_1;
     delete [] single_int_2;
