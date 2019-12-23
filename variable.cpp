@@ -20,7 +20,7 @@ int main()
     cout << "&local_variable_l = " << &local_variable_l << ";" << endl;
     cout << "&local_variable_2 = " << &local_variable_2 << ";" << endl;
     cout << "single_int_1 = " << single_int_1 << "; " << endl;
-    cout << &single_int_2 = " << single_int_2 << ";" << endl;
+    cout << "single_int_2 = " << single_int_2 << ";" << endl;
 
     delete single_int_1;
     delete single_int_2;
