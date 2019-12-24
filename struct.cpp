@@ -62,10 +62,10 @@ int main()
     cout << "Size of DisorderedClient1: " << sizeof(DisorderedClient1) << endl;
     cout << "Sum of fields in Client struct: " << sizeof(client.Age) + sizeof(client.Queue) + sizeof(client.Name) + sizeof(client.Alright) + sizeof(client.Home) + sizeof(client.SecondName) << endl;
     cout << "Sum of fields in DisorderedClient struct: " <<  sizeof(client.Age) + sizeof(client.Queue) + sizeof(client.Name) + sizeof(client.Alright) + sizeof(client.Home) + sizeof(client.SecondName) << endl;
-    cout << &client.Alright << " " << &client.Name << " " << &client.Queue << " " << &client.Age << " " << &client.Name << " " << &client.SecondName << endl;
-    cout << &client1.Alright << " " << &client1.Name << " " << &client1.Queue << " " << &client1.Age << " " << &client1.Name << " " << &client1.SecondName << endl;
-    cout << &disorderedClient.Alright << " " << &disorderedClient.Name << " " << &disorderedClient.Queue << " " << &disorderedClient.Age << " " << &disorderedClient.Name << " " << &disorderedClient.SecondName << endl;
-    cout << &disorderedClient1.Alright << " " << &disorderedClient1.Name << " " << &disorderedClient1.Queue << " " << &disorderedClient1.Age << " " << &disorderedClient1.Name << " " << &disorderedClient1.SecondName << endl;
+    cout << &client.Home << "-bool" << " " << &client.Queue << "-int" << " " << &client.Name << "-char" << " " << &client.Age << "-float" << " " << &client.Alright << "-bool" << " " << &client.SecondName << "-char" << endl;
+    cout << &client1.Home << "-bool" << " " << &client1.Queue << "-int" << " " << &client1.Name << "-char" << " " << &client1.Age << "-float" << " " << &client1.Alright << "-bool" << " " << &client1.SecondName << "-char" << endl;
+    cout << &disorderedClient.Alright << "-bool" << " " << &disorderedClient.Home << "-bool" << " " << &disorderedClient.Name << "-char" << " " << &disorderedClient.SecondName << "-char" << " " << &disorderedClient.Queue << "-int" << " " << &disorderedClient.Age << "-float" << endl;
+    cout << &disorderedClient1.Alright << "-bool" << " " << &disorderedClient1.Home << "-bool" << " " << &disorderedClient1.Name << "-char" << " " << &disorderedClient1.SecondName << "-char" << " " << &disorderedClient1.Queue << "-int" << " " << &disorderedClient1.Age << "-float" << endl;
     return 0;
 }
 
