@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    const int size = 2;
+    const int size = 3;
 
     int static_one_dim_array[size];
 
@@ -33,9 +33,9 @@ int main()
 
     cout << endl;
 
-    for(int i = 0; i < size; i++)
+    for(int i = 0; i < size - 1; i++)
     {
-        for(int j = 0; j < size; j++)
+        for(int j = 0; j < size - 1; j++)
         {
             cout << "&static_two_dim_array[" << i << "]"  << "[" << j << "] = " << &static_two_dim_array[i][j] << endl;
         }
@@ -43,15 +43,15 @@ int main()
 
     cout << endl;
 
-    for(int i = 0; i < size; i++)
+    for(int i = 0; i < size - 1; i++)
     {
-        for(int j = 0; j < size; j++)
+        for(int j = 0; j < size - 1; j++)
         {
             cout << "&dynamic_two_dim_array[" << i << "]"  << "[" << j << "] = " << &dynamic_two_dim_array[i][j] << endl;
         }
     }
 
-    for(int i = 0; i < size; i++)
+    for(int i = 0; i < size - 1; i++)
     {
         delete [] dynamic_two_dim_array[i];
     }
