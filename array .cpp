@@ -56,7 +56,7 @@ int main()
         delete [] dynamic_two_dim_array[i];
     }
 
-    delete dynamic_two_dim_array;
+    delete[] dynamic_two_dim_array;
     delete[] dynamic_one_dim_array;
 
     return 0;
